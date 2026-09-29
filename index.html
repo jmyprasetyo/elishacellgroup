@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upcoming Events — Cell of St. Elisha</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6EFDF;
+    --ink: #2B2118;
+    --muted: #7A6A54;
+    --accent: #7B2D3B;
+    --gold: #B98431;
+    --rule: #DFD0AC;
+    --paper: #FFFDF7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  main {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 4rem;
+  }
+  header {
+    padding-bottom: 1.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2.1rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.35rem;
+    color: var(--ink);
+  }
+  .sub {
+    margin: 0;
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.1rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  li:last-child { border-bottom: none; }
+  .date {
+    flex: 0 0 4.4rem;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    text-align: center;
+    padding: 0.55rem 0.25rem 0.5rem;
+  }
+  .event { flex: 1 1 auto; min-width: 0; }
+  .date .day {
+    display: block;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    color: var(--accent);
+  }
+  .date .month {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-top: 0.15rem;
+  }
+  .event h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 0 0 0.3rem;
+    line-height: 1.3;
+  }
+  .when {
+    margin: 0 0 0.55rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  a {
+    color: var(--accent);
+    font-size: 0.92rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+  }
+  a:hover { color: var(--gold); }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  footer {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    li { animation: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Upcoming events</h1>
+    <p class="sub">Cell of St. Elisha</p>
+  </header>
+
+  <ul>
+    <li>
+      <div class="date"><span class="day">10</span><span class="month">Oct</span></div>
+      <div class="event">
+        <h2>Funminton</h2>
+        <p class="when">5:00 – 7:00 PM</p>
+        <a href="https://maps.app.goo.gl/iogscKCbxsqCZHvu9?g_st=ic">Get directions</a>
+      </div>
+    </li>
+    <li>
+      <div class="date"><span class="day">24</span><span class="month">Oct</span></div>
+      <div class="event">
+        <h2>Worship4Mission</h2>
+        <p class="when">5:00 – 7:00 PM</p>
+        <a href="https://maps.app.goo.gl/E8BAtoQrNb1fjzwN9?g_st=ic">Get directions</a>
+      </div>
+    </li>
+    <li>
+      <div class="date"><span class="day">31</span><span class="month">Oct – 1 Nov</span></div>
+      <div class="event">
+        <h2>Refill (Pembinaan Pelayan)</h2>
+        <p class="when">Overnight retreat</p>
+        <a href="https://maps.app.goo.gl/yRCMekBkuXvEHmLHA?g_st=ic">Get directions</a>
+      </div>
+    </li>
+    <li>
+      <div class="date"><span class="day">6</span><span class="month">– 8 Nov</span></div>
+      <div class="event">
+        <h2>Retreat Penyembuhan Luka Batin</h2>
+        <p class="when">Multi-day retreat</p>
+        <a href="https://maps.app.goo.gl/6gXoND125iCftW9h9?g_st=ic">Get directions</a>
+      </div>
+    </li>
+  </ul>
+
+  <footer>
+    Pinned for the cell group — check back for updates.
+  </footer>
+</main>
+</body>
+</html>
