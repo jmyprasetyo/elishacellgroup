@@ -57,31 +57,21 @@
     border-bottom: 1px solid var(--rule);
   }
   li:last-child { border-bottom: none; }
-  .date {
-    flex: 0 0 4.4rem;
-    background: var(--paper);
-    border: 1px solid var(--rule);
+  .poster {
+    flex: 0 0 4.6rem;
+    width: 4.6rem;
+    height: 4.6rem;
     border-radius: 4px;
-    text-align: center;
-    padding: 0.55rem 0.25rem 0.5rem;
+    border: 1px solid var(--rule);
+    overflow: hidden;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
   .event { flex: 1 1 auto; min-width: 0; }
-  .date .day {
-    display: block;
-    font-family: 'Fraunces', serif;
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.1;
-    color: var(--accent);
-  }
-  .date .month {
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    color: var(--muted);
-    margin-top: 0.15rem;
-  }
   .event h2 {
     font-family: 'Fraunces', serif;
     font-weight: 500;
@@ -129,34 +119,34 @@
 
   <ul>
     <li>
-      <div class="date"><span class="day">10</span><span class="month">Oct</span></div>
+      <div class="poster"><img src="images/funminton.jpg" alt="Fun Badminton poster"></div>
       <div class="event">
         <h2>Funminton</h2>
-        <p class="when">5:00 – 7:00 PM</p>
+        <p class="when">October 10, 5:00 – 7:00 PM</p>
         <a href="https://maps.app.goo.gl/iogscKCbxsqCZHvu9?g_st=ic">Get directions</a>
       </div>
     </li>
     <li>
-      <div class="date"><span class="day">24</span><span class="month">Oct</span></div>
+      <div class="poster"><img src="images/worship4mission.jpg" alt="Worship4Mission poster"></div>
       <div class="event">
         <h2>Worship4Mission</h2>
-        <p class="when">5:00 – 7:00 PM</p>
+        <p class="when">October 24, 5:00 – 7:00 PM</p>
         <a href="https://maps.app.goo.gl/E8BAtoQrNb1fjzwN9?g_st=ic">Get directions</a>
       </div>
     </li>
     <li>
-      <div class="date"><span class="day">31</span><span class="month">Oct – 1 Nov</span></div>
+      <div class="poster"><img src="images/refill.jpg" alt="Refill poster"></div>
       <div class="event">
-        <h2>Refill (Pembinaan Pelayan)</h2>
-        <p class="when">Multi-day retreat</p>
+        <h2>Refill</h2>
+        <p class="when">October 31 – November 1</p>
         <a href="https://maps.app.goo.gl/yRCMekBkuXvEHmLHA?g_st=ic">Get directions</a>
       </div>
     </li>
     <li>
-      <div class="date"><span class="day">6</span><span class="month">– 8 Nov</span></div>
+      <div class="poster"><img src="images/wounded-to-whole.jpg" alt="Wounded to Whole poster"></div>
       <div class="event">
-        <h2>Retreat Penyembuhan Luka Batin</h2>
-        <p class="when">Multi-day retreat</p>
+        <h2>Wounded to Whole</h2>
+        <p class="when">November 6 – 8</p>
         <a href="https://maps.app.goo.gl/6gXoND125iCftW9h9?g_st=ic">Get directions</a>
       </div>
     </li>
